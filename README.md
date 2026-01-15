@@ -9,15 +9,12 @@
 
 ## Setup
 ```bash
-python -m venv venv
-# Windows: venv\Scripts\activate
-# Mac/Linux: source venv/bin/activate
 pip install django djangorestframework djangorestframework-simplejwt django-filter
 pip install pytest pytest-django
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
-
+```
 Auth (JWT)
 
 POST /api/token/ with:
